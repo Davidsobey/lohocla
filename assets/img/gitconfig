@@ -1,0 +1,13 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = David
+	email = david.sobey@standardbank.co.za
+[http]
+	proxy = http://websenseproxy.standardbank.co.za:8080/
+	sslVerify = false
+[https]
+	proxy = https://websenseproxy.standardbank.co.za:8080/
